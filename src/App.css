@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+.Calcontainer {
+  top: 30%;
+  left: 45%;
+  position: absolute;
+  margin: 0 auto;
+  width: 700px;
+  border-radius: 10px;
+  animation: moveColor 8s linear infinite;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 7px solid rgb(251, 0, 0);
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #23395d, #203354, #1c2e4a, #192841, #152238);
+  background-size: 400% 400%;
+  animation: movecolor 5s ease infinite;
+}
+@keyframes moveColor {
+  0% {
+    border-color: rgb(35, 32, 32);
+  }
+  25% {
+    border-color: rgb(1, 1, 11);
+  }
+  50% {
+    border-color: rgb(132, 175, 132);
+  }
+  75% {
+    border-color: rgb(37, 37, 35);
+  }
+  100% {
+    border-color: rgb(60, 16, 16);
+  }
+}
+@keyframes movecolor {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.CalDisplay:hover {
+  background-color: rgb(199, 45, 45);
+}
+.ButtonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  background-color: #054dc9;
+}
+
+h1{
+  color: rgb(48, 1, 1);
+}
+.CalDisplay {
+  height: 40px;
+  font-size: 2em;
+  background-color: rgb(115, 87, 87);
+  color: rgb(249, 125, 0);
+}

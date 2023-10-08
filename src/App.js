@@ -65,7 +65,6 @@ function App() {
         <CalButton label={2} onClick={handleButtonClick} />
         <CalButton label={3} onClick={handleButtonClick} />
         <CalButton label="-" onClick={handleButtonClick} />
-        <CalButton label="C" onClick={handleButtonClick} />
         <CalButton label={0} onClick={handleButtonClick} />
         <CalButton label="=" onClick={handleButtonClick} />
         <CalButton label="+" onClick={handleButtonClick} />
